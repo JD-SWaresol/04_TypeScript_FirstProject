@@ -2,13 +2,16 @@
 
 # Install TypesScript
 
- sudo npm i -g typescript
+    sudo npm i -g typescript
 
 
- # Check TypeScript version
+# Check TypeScript version
 
- tsc -v
-
- 
+    tsc -v
 
 
+# TypeScript compiler compiles a TS file and generate a JS file
+
+    tsc 'filename'.ts
+
+# 
