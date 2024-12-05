@@ -56,3 +56,23 @@
         removeComments : true   # Is this is enabled the TS compiler is going to remove all commnets that we add in our TS code, so the generated JS code is going to be shorter 
 
         noEmitOnError: true     # By default whe we compile our code even if you have errors in out code TS compiler will still generate JS files. If exists any error, the TS compiler is not going to geenrate any JS files.
+
+        --------------------------------------------------
+
+        sourceMap : true        # Specifies how each line of our TS code maps to the generated JS code. Generates 'filename'.js.map
+
+
+# ~/dist/'filename'.js.map
+
+    This is our source map and its code specifies how our TS code maps to our JS code. This is for debuggers its for machines
+
+
+# ~/launch.json
+
+    VS Code -> Run and Debug -> *select* create launch.json file -> *select* Node.js
+
+    The preLaunchTask instruction is used to by TS compiler to build our application, using 'tsconfig.json' file
+
+            "program": "${workspaceFolder}/src/index.ts",
+            "preLaunchTask": "tsc: build - tsconfig.json",
+            "outFiles": [
