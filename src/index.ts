@@ -1,4 +1,4 @@
-let ages: number = 20;
-if (ages < 50)
-    ages += 10;
-console.log(ages);
+let sales = 123_456_789;
+let course = 'TypeScript';
+let is_published = true;
+let level;

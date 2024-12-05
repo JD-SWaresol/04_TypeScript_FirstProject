@@ -76,3 +76,22 @@
             "program": "${workspaceFolder}/src/index.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
+
+
+# Built In type
+
+    We can define the value of a variable, for example:
+
+        let sales: number = 123_456_789;
+        let course: string = 'TypeScript';
+        let is_published: boolean = true;
+
+    This is the same if we declare like:
+
+        let sales = 123_456_789;
+        let course = 'TypeScript';
+        let is_published = true;
+
+    But exis the any case, where TS compiler can infer or detect the type of our variables based on their value
+        
+        let level;
