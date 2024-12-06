@@ -25,6 +25,11 @@
     tsc
 
 
+# Executes a JS file
+
+    node 'fileName'.js
+
+
 
 ///// NOTES //////
 
@@ -139,8 +144,13 @@
 
             let user: [number, string] = [1, 'Mosh'];
 
-            user[1].*     ->    We can see all methods of number objects and If we access the second element we see all the properties of string objects.
+            user[1].*;     ->    We can see all methods of number objects and If we access the second element we see all the properties of string objects.
 
     Tuples internally are represented using plain JS arrays, so if we compile our code, we're just going to see a regular JS array.
 
     Tuples are useful when we have only two values like key values pairs.
+
+
+# Enum
+
+    Is another built-in type of TS wich represents a list of related constants 
