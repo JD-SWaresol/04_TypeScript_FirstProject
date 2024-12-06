@@ -129,3 +129,18 @@
 
         let numbers: number[] = [];
         numbers forEach(n => n);            # In the second 'n' we can get all methods from the type of Array. This is very useful, and JS has not this.
+
+
+# Tuples
+
+    Its a new type which is a fixed lenght array where each element has a particular type we often use them when working with a pair of values.
+
+    For each user we want to represent two values, an Id and a name (1, 'Mosh')
+
+            let user: [number, string] = [1, 'Mosh'];
+
+            user[1].*     ->    We can see all methods of number objects and If we access the second element we see all the properties of string objects.
+
+    Tuples internally are represented using plain JS arrays, so if we compile our code, we're just going to see a regular JS array.
+
+    Tuples are useful when we have only two values like key values pairs.
