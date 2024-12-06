@@ -181,4 +181,9 @@
         }
 
 
-# 
+# Objects
+
+    JavaScript: The objects are dynamic. Their shape can change throughout the lifetime of our programs.
+
+
+    TypeScript: If a objetct property does not exist its not possible declare.
