@@ -69,6 +69,12 @@
         noImplicitAny : true    # The compiler will complain about implicit any types. 
                                 # Use this with caution!!! only if you know what you're doing otherwise there's really no point using typescript beacause you will lose the MAJOR BENEFITS of TS.
 
+        noUnsedParameters: true # Shows a yellow warning saying a function parameter is decalred but its is never read
+
+        noImplicitReturns: true # Show a warning saying not all function paths has a return.
+
+        noUnusedLocals: true    # Shows a yellow warning saying a variable is declared but its value is never read.
+
 
 # ~/dist/'filename'.js.map
 
@@ -154,3 +160,25 @@
 # Enum
 
     Is another built-in type of TS wich represents a list of related constants 
+
+
+# Functions
+
+
+    TS Compiler sometimes infers the type of the return value for us. For exameple, in the next function infers that the value is '0'
+
+        function calculateTax(income: number) {
+            return 0;
+        }
+
+    The best practice is put the value of return.
+
+
+    We can define the possibly parameter undefined
+    
+        function calculateTax(income: number, taxYear?: number): number {
+            return 0;
+        }
+
+
+# 
