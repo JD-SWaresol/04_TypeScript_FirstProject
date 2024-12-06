@@ -113,3 +113,19 @@
 # Implicity:
 
     Means we haven´t explicitly or clearly set the type of a parameter so the compiler is inferring or guessing the type of the parameter. And that can be an error.
+
+
+
+# Arrays
+
+    Java Script
+        let numbers = [1, 2, '3'];           # JS is dynamic and each element can be of different type
+
+    Type Script
+        let numbers: number[] = [1, 2, '3']  # TS compiler generates an error, because string is not a number
+
+
+        Another Example:
+
+        let numbers: number[] = [];
+        numbers forEach(n => n);            # In the second 'n' we can get all methods from the type of Array. This is very useful, and JS has not this.
