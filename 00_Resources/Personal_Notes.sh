@@ -61,6 +61,9 @@
 
         sourceMap : true        # Specifies how each line of our TS code maps to the generated JS code. Generates 'filename'.js.map
 
+        noImplicitAny : true    # The compiler will complain about implicit any types. 
+                                # Use this with caution!!! only if you know what you're doing otherwise there's really no point using typescript beacause you will lose the MAJOR BENEFITS of TS.
+
 
 # ~/dist/'filename'.js.map
 
@@ -95,3 +98,18 @@
     But exis the any case, where TS compiler can infer or detect the type of our variables based on their value
         
         let level;
+
+# The any Type
+
+    Its possible generate an 'any' variable and set it two differents values:
+
+        let level;
+        level = 1;
+        level = 'a';
+
+    But this is not a segure way to work
+
+
+# Implicity:
+
+    Means we haven´t explicitly or clearly set the type of a parameter so the compiler is inferring or guessing the type of the parameter. And that can be an error.
