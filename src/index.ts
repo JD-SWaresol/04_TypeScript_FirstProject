@@ -1,24 +1,11 @@
+// Literal (exact, specific)
 
-// With '&' we represents  this type lika an object that is both a number and a string at the same time. THIS IS NOT REAL!!!
-// let weight: number & string;
 
-// Look the Next Example of Intersection Types: 
+type Quantity = 50 | 100;
+let quality: Quantity = 100;
 
-// This is an object that can be dragged on the screen
-type Draggable = {
-    drag: () => void
-}
+type Metric = 'cm' | 'inch';
 
-// This is an object that can be resized
-type Resizable = {
-    resize: () => void
-}
-
-// Intersection Type:
-type UIWidget = Draggable & Resizable;
-
-// With this type in place we can declare a variable called 'textBox' and this contains both properties
-let textBox: UIWidget = {
-    drag: () => {},
-    resize: () => {}
-}
+/*
+    We can define a type of variable and set two values.
+*/

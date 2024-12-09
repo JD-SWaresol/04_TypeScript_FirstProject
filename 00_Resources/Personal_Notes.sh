@@ -212,3 +212,9 @@
 # Intersection Type
 
     With this we can combine two types with its specific properties and calll a new type.
+
+
+
+# Literal Types
+
+    We want to limit the values and assign to a variable
