@@ -187,3 +187,16 @@
 
 
     TypeScript: If a objetct property does not exist its not possible declare.
+
+
+
+# DRY : Dont Repeate Yourself 
+
+# Type of Alies
+
+    This follows three rules:
+
+        1.- Dont Repeate the Code -> DRY
+        2.- If we create an object with some different properties
+    
+    Using alias we can define a custom type!!!
