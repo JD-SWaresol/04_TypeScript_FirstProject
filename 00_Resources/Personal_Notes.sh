@@ -200,3 +200,8 @@
         2.- If we create an object with some different properties
     
     Using alias we can define a custom type!!!
+
+
+# Union Types
+
+    Narrowing: Is a technique wich a variable has some methods that shares a variable with two types
