@@ -1,17 +1,24 @@
 
-// This functions is called with a number or string and returns a number
-function kgToLbs(weight: number | string): number{
-    // Narrowing
-    //weight.*  <- Use methods that are specific to Number and String
+// With '&' we represents  this type lika an object that is both a number and a string at the same time. THIS IS NOT REAL!!!
+// let weight: number & string;
 
-    if (typeof weight === 'number')
-        // Here we can see Number methods
-        return weight * 2.2;
-    else
-        // Here we can see String methods
-        return parseInt(weight) * 2.2;
+// Look the Next Example of Intersection Types: 
+
+// This is an object that can be dragged on the screen
+type Draggable = {
+    drag: () => void
 }
 
-// We can call this function using two aways
-kgToLbs(10);
-kgToLbs('10kg');
+// This is an object that can be resized
+type Resizable = {
+    resize: () => void
+}
+
+// Intersection Type:
+type UIWidget = Draggable & Resizable;
+
+// With this type in place we can declare a variable called 'textBox' and this contains both properties
+let textBox: UIWidget = {
+    drag: () => {},
+    resize: () => {}
+}

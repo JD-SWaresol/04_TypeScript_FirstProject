@@ -202,6 +202,13 @@
     Using alias we can define a custom type!!!
 
 
+
 # Union Types
 
     Narrowing: Is a technique wich a variable has some methods that shares a variable with two types
+
+
+
+# Intersection Type
+
+    With this we can combine two types with its specific properties and calll a new type.
